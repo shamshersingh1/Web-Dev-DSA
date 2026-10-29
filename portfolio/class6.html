@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PortFolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navhead"><h1>MyPortFolio</h1></div>
-        <div class="navlinks">
-            <a href="#">Home |</a>
-        
-            <a href="#">About |</a>
-        
-            <a href="#">Project |</a>
-    
-            <a href="#">Contact |</a>
+
+    <header>
+        <nav class="navhead">
+            <div class="navbar">My Portfolio</div>
+
+            <div class="navlink">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            <section class="sec1">
-                <div class="Home">
-                    <h1 class="t">Hi I'm <span class="name">Shamsher Singh</span></h1>
+        </nav>
+    </header>
+
+    <main class="mb">
+
+        <!-- Home section -->
+        <section id="home">
+
+            <div id="dis">
+                <h1 class="txt">
+                    Hi, I'm <span style="color: yellow;">Unknown</span>!
+                </h1>
+
+                <p class="txt">
+                    A frontend developer exploring the world of design
+                    and open-source.
                     <br>
-                    <p class="profile substitle">A Frontend Developer exploring the world of design and open-source.Turning <br>ideas into interactive,user-friendly web application</p>
-                    <img class="Image" src="./WhatsApp Image 2026-09-04 at 9.52.04 PM.jpeg" height="200">
-                </div>
-                <br>
-                <button class="button">View My Work</button>
-                
+                    Turning ideas into interactive, user-friendly web applications.
+                </p>
+            </div>
+
+            <p id="userimg">
+                <img
+                    src="https://i.pinimg.com/1200x/68/0e/24/680e241336ae8d3a57a42f54b656e58f.jpg"
+                    alt="Profile image">
+            </p>
+
+            <button
+                id="btn"
+                type="button"
+                onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                Verify My Work
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- About section -->
+        <div class="info">
+
+            <section id="about">
+                <h2>About Me</h2>
+
+                <p>
+                    I am a passionate frontend developer with experience
+                    in creating responsive and user-friendly web applications.
+                    I specialize in HTML, CSS, and JavaScript.
+                </p>
             </section>
-    </nav>
+
+            <hr>
+
+            <!-- Projects section -->
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <ul>
+                    <li>Project 1: Portfolio Website</li>
+                    <li>Project 2: E-commerce Platform</li>
+                    <li>Project 3: Blogging Application</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="contact">
+                <h2>Contact</h2>
+
+                <p>
+                    Email:
+                    <a href="mailto:testunkown@gmail.com"
+                       style="color: yellow;">
+                        testunkown@gmail.com
+                    </a>
+                </p>
+
+                <p>Phone: +1234567890</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Unknown. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
