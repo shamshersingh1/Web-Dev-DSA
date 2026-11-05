@@ -3,7 +3,7 @@
 }
 
 html {
-    background-image: linear-gradient(to right, #fd1d52, #0a1f5f);
+    background-image: linear-gradient(to right, #02e1ff, #2200ff);
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
@@ -56,7 +56,6 @@ header {
     color: yellow;
 }
 
-/* Introduction - unchanged */
 #dis {
     margin: 120px 50px 40px;
     max-width: 650px;
@@ -88,7 +87,7 @@ header {
     height: 350px;
     width: 350px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -147,6 +146,74 @@ header {
 
 .info li {
     margin-bottom: 10px;
+}
+
+#project {
+    scroll-margin-top: 100px;
+}
+
+.pcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project-card {
+    width: 320px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    color: #ffe66d;
+    font-size: 26px;
+    margin: 20px 12px 10px;
+}
+
+.project-card p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 18px;
+    min-height: 82px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 8px 0 22px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #141e30;
+    background-color: #ffe66d;
 }
 
 #Skills {
@@ -242,7 +309,7 @@ footer {
 
 .stats-items {
     flex: 1;
-    border-radius: 2px;
+    border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-left: 120px;
 
